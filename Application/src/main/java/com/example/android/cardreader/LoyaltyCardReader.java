@@ -18,6 +18,11 @@ package com.example.android.cardreader;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import com.example.android.common.logger.Log;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.lang.ref.WeakReference;
 
 /**
@@ -45,6 +50,15 @@ public class LoyaltyCardReader implements NfcAdapter.ReaderCallback {
     @Override
     public void onTagDiscovered(Tag tag) {
         String tagID = ByteArrayToHexString(tag.getId());
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            DatabaseReference dbRef = database.getReference();
+            dbRef.child("users").child(user.getUid()).child("tagId").setValue(tagID);
+            //dbRef.setValue(tagID);
+        }
+
         Log.i(TAG, "New tag discovered: " + tagID);
     }
 

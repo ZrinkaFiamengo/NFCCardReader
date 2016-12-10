@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "252639772097",
+    "firebase_url": "https://nfccardreader.firebaseio.com",
+    "project_id": "nfccardreader",
+    "storage_bucket": "nfccardreader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252639772097:android:3f5eb0d4e2903f0d",
+        "android_client_info": {
+          "package_name": "com.example.android.cardreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252639772097-92re0qfqrjh83rqgq309pkv73vm8ao86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.cardreader",
+            "certificate_hash": "DEDAEA2940E3D7FCA634D555BBD272553A98901A"
+          }
+        },
+        {
+          "client_id": "252639772097-vqd40fm9s9df4duvjropsd7adngoedq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9wDcwk7WlZ4ctGUnlFdgy6HZ0sq9Bemc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252639772097-vqd40fm9s9df4duvjropsd7adngoedq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
